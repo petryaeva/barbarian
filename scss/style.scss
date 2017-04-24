@@ -1,0 +1,30 @@
+/* Резервные и дополнительные файлы по умолчанию
+========================================================================== */
+@import "global/normalize.scss";
+/* Файлы базовых переменных, шрифтов, примесей и заполнителей
+========================================================================== */
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/fonts.scss";
+/* FRAMEWORK - Структура файлов и общие стили
+========================================================================== */
+@import "global/scaffolding.scss";
+/* Многократно используемые элементы сайта
+========================================================================== */
+@import "blocks/wrap-all.scss";
+@import "blocks/container.scss";
+@import "blocks/header.scss";
+@import "blocks/footer.scss";
+@import "blocks/btn.scss";
+@import "blocks/form.scss";
+@import "blocks/logo.scss";
+@import "blocks/menu.scss";
+@import "blocks/basket.scss";
+@import "blocks/slider.scss";
+@import "blocks/improve.scss";
+@import "blocks/popular-category.scss";
+@import "blocks/tabs.scss";
+@import "blocks/new-goods.scss";
+@import "blocks/sales.scss";
+@import "blocks/encyclopedia.scss";
+@import "blocks/viewed-goods.scss";

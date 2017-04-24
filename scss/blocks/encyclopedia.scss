@@ -1,0 +1,82 @@
+.encyclopedia {
+  margin-bottom: 65px;
+  &__list {
+    display: flex;
+
+    @media #{$tablet-width} {
+      flex-wrap: wrap;
+    }
+  }
+  &__item {
+    width: 370px;
+    margin-right: 30px;
+    background: #fff;
+    position: relative;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      .encyclopedia__text {
+        color: $orange;
+      }
+      &:before {
+        content: '';
+        position: absolute;
+        width: 108%;
+        height: 108%;
+        top: -4%;
+        left: -4%;
+        border: 1px solid #b7b7b7;
+        opacity: 0.4;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        width: 89%;
+        height: 1px;
+        bottom: 0;
+        left: 5%;
+        background: $orange;
+      }
+    }
+
+    @media #{$tablet-width} {
+      width: 47%;
+      margin-right: 20px;
+    }
+    @media #{$mobile-width} {
+      width: 100%;
+      padding: 0 15px 10px 15px;
+      margin-right: 0;
+    }
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @media #{$tablet-width} {
+      text-align: center;
+    }
+  }
+  &__text {
+    padding: 20px;
+
+    a {
+      display: block;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-top: 5px;
+      color: $orange;
+    }
+  }
+  &__show-all {
+    color: $orange;
+    font-size: 15px;
+
+    @media #{$mobile-width} {
+      display: none;
+    }
+  }
+}

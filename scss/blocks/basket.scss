@@ -1,0 +1,39 @@
+.basket {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 0px 15px 60px;
+  font-size: 0.9em;
+  line-height: 40px;
+
+  &--tablet  {
+    display: none;
+  }
+
+  @media (max-width: 1024px) {
+    display: none;
+
+    &--tablet  {
+      display: block;
+      padding: 0;
+      font-size: 0.8em;
+      margin-left: 10px;
+    }
+  }
+
+  @media #{$mobile-width} {
+    width: 50px;
+    height: 35px;
+    overflow: hidden;
+  }
+
+  &__count {
+    background: url(../img/basket.png) no-repeat 0 -3px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 35px;
+    margin-right: 10px;
+    margin-top: -6px;
+  }
+}

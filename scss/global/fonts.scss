@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/PTSans/PTSansRegular/PTSansRegular.eot");
+    src: url("../fonts/PTSans/PTSansRegular/PTSansRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PTSans/PTSansRegular/PTSansRegular.woff") format("woff"),
+    url("../fonts/PTSans/PTSansRegular/PTSansRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* font-family: "PTSansBold"; */
+@font-face {
+    font-family: "PT Sans";
+    src: url("../fonts/PTSans/PTSansBold/PTSansBold.eot");
+    src: url("../fonts/PTSans/PTSansBold/PTSansBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/PTSans/PTSansBold/PTSansBold.woff") format("woff"),
+    url("../fonts/PTSans/PTSansBold/PTSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 800;
+}

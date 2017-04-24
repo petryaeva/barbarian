@@ -1,0 +1,43 @@
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 72%;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media #{$mobile-width} {
+    flex-direction: column;
+  }
+
+  &__item {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 21px 15px;
+    font-size: 0.9em;
+    border-right: 1px solid #414141;
+    align-self: center;
+
+    &:hover {
+      background: #000;
+      border-right: 1px solid #000;
+    }
+
+    @media (max-width: 1024px) {
+      padding: 18px 3%;
+    }
+
+    @media #{$tablet-width} {
+      padding: 15px 2%;
+      font-size: 0.78em;
+    }
+
+    @media #{$mobile-width} {
+      padding: 8px 0;
+      border-right: none;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.improve {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+
+  @media (max-width: 1024px) {
+    padding: 0 40px;
+  }
+
+  @media #{$tablet-width} {
+    padding: 0;
+  }
+
+  @media #{$mobile-width} {
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    &--guarante {
+      background: url(../img/share1.svg) no-repeat 0 0;
+      padding-left: 30px;
+    }
+    &--delivery-free {
+      background: url(../img/share2.svg) no-repeat 0 3px;
+      padding-left: 35px;
+    }
+    &--delivery {
+      background: url(../img/share3.svg) no-repeat 0 2px;
+      padding-left: 30px;
+    }
+    &--bonus {
+      background: url(../img/share4.svg) no-repeat 0 0;
+      padding-left: 30px;
+    }
+
+    @media #{$mobile-width} {
+      margin-bottom: 15px;
+    }
+  }
+  @media #{$mobile-width} {
+    padding: 0 10%;
+  }
+}

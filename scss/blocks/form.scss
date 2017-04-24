@@ -1,0 +1,37 @@
+.form {
+
+  &__input {
+    padding: 5px 10px;
+    border: none;
+    border-right: 2px;
+  }
+
+  &--search {
+    width: 210px;
+    margin-right: 25px;
+
+    @media (max-width: 1024px) {
+      width: 460px;
+    }
+
+    @media #{$tablet-width} {
+      width: 200px;
+    }
+
+    @media #{$mobile-width} {
+      display: none;
+    }
+
+    .form__input {
+      background: #eaeaea;
+      color: $grey;
+      font-size: 15px;
+      height: 25px;
+
+      @media (max-width: 1024px) {
+        background: #414141;
+        width: 100%;
+      }
+    }
+  }
+}

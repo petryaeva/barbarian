@@ -1,0 +1,18 @@
+$mobile-width: #{(max-width: 768px)};
+$tablet-width: #{(max-width: 998px)};
+$desktop-width: #{(max-width: 1170px)};
+$retina: #{(min-resolution: 144dpi), (min-resolution: 1.5dppx)};
+
+$font-primary: 'PT Sans', sans-serif;
+
+$orange: #f25c44;
+$grey: #333333;
+$light-grey: #b7b7b7;
+$dark-grey: #303030;
+$blue: #82d2e5;
+
+$link-primary: $orange;
+$link-secondary: $blue;
+$link-tertiary: $grey;
+
+$radius-button: 5px;

@@ -1,0 +1,125 @@
+.footer {
+  flex: 0 0 auto;
+  background: $dark-grey;
+  border-top: 4px solid $orange;
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  &__top {
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #858585;
+
+    @media (max-width: 1024px) {
+      padding: 15px;
+    }
+
+    @media #{$tablet-width} {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__wrap {
+    @include container();
+  }
+  &__menu-list {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    @media #{$mobile-width} {
+      margin-bottom: 20px;
+    }
+  }
+  .footer-menu {
+    margin-right: 60px;
+
+    @media (max-width: 1024px) {
+      margin-right: 20px;
+    }
+
+    &__caption {
+      font-weight: 600;
+      color: #fff;
+      margin-bottom: 19px;
+    }
+  }
+  .menu {
+      font-size: 0;
+      list-style-type: none;
+      padding-left: 0px;
+      max-width: none;
+      display: block;
+
+      &__item {
+          display: block;
+          line-height: 24px;
+          color: #fff;
+          text-decoration: none;
+          text-transform: none;
+          padding: 0;
+          font-size: 1em;
+          border-right: none;
+
+          &:hover {
+              background: none;
+              border-right: none;
+              a {
+                text-decoration: underline;
+              }
+          }
+
+          a {
+              font-size: 16px;
+              font-weight: 400;
+              text-decoration: none;
+              color: $light-grey;
+
+              @media #{$tablet-width} {
+                font-size: 15px;
+              }
+          }
+      }
+  }
+  .share-vk {
+    margin-right: 40px;
+
+    @media #{$mobile-width} {
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+
+    img {
+      height: auto;
+    }
+  }
+  .phones {
+    color: $light-grey;
+
+    .work-time {
+        margin-bottom: 8px;
+        font-size: 15px;
+        letter-spacing: normal;
+    }
+    &__item {
+        font-size: 1.8em;
+        letter-spacing: 1.7px;
+        margin-bottom: 15px;
+
+        @media (max-width: 1024px) {
+          font-size: 1.5em;
+        }
+    }
+  }
+  &__logo {
+    width: 108px;
+    height: auto;
+  }
+  &__develop {
+    text-align: center;
+    margin-top: 15px;
+    display: block;
+  }
+}

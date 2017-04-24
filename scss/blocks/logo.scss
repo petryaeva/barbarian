@@ -1,0 +1,19 @@
+.logo {
+  width: 178px;
+  height: 70px;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+
+  &--tablet {
+    display: none;
+    width: 140px;
+    height: 52px;
+    margin-right: 20px;
+
+    @media (max-width: 1024px) {
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,154 @@
+.slider {
+  .slider__arrow--next,
+  .slider__arrow--prev {
+    width: 52px;
+    height: 45px;
+    border: none;
+    border-radius: 100px 0 0 100px;
+    background-color: #000000;
+    position: absolute;
+    z-index: 10;
+    top: 38%;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+
+    &:before,
+    &:after {
+      content: '';
+      width: 4px;
+      height: 20px;
+      background: #fff;
+      position: absolute;
+    }
+  }
+
+  .slider__arrow--prev {
+    transform: rotate(180deg);
+
+    &:before {
+      transform: rotate(45deg);
+      top: 18px;
+    }
+    &:after {
+      transform: rotate(-45deg);
+      top: 6px;
+    }
+  }
+
+  .slider__arrow--next {
+    right: 0;
+
+    &:before {
+      transform: rotate(45deg);
+      top: 18px;
+    }
+    &:after {
+      transform: rotate(-45deg);
+      top: 6px;
+    }
+  }
+
+  &--full-screen {
+    margin-bottom: 25px;
+
+    .slider__item {
+      position: relative;
+      display: flex;
+      background-image: linear-gradient(270deg, rgba(242, 92, 67, 0) 0%, $orange 100%);
+
+      @media #{$tablet-width} {
+        max-height: 300px;
+      }
+    }
+
+    .slider__desk {
+      position: absolute;
+      z-index: 10;
+      width: 48%;
+      top: 10%;
+      left: 5%;
+      color: #fff;
+
+      @media #{$tablet-width} {
+        width: 60%;
+      }
+
+      @media #{$mobile-width} {
+        width: 85%;
+      }
+    }
+
+    .slider__title {
+      color: #ffffff;
+      @include font-control(6.1em, 0.8em, 700);
+      margin-bottom: 18px;
+
+      @media #{$tablet-width} {
+        font-size: 2.5em;
+      }
+    }
+
+    .slider__text {
+        font-weight: 600;
+        font-size: 1.1em;
+        width: 70%;
+    }
+
+    .slick-dots {
+        position: absolute;
+        bottom: 0;
+        margin: 0 auto;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+
+        li {
+          font-size: 0;
+          margin-right: 8px;
+        }
+
+        button {
+          background: none;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          border: 3px solid $grey;
+          padding: 0;
+        }
+
+        .slick-active {
+          button {
+            background: $grey;
+          }
+        }
+    }
+  }
+  &--liders,
+  &--sales {
+    .slider__arrow--next,
+    .slider__arrow--prev {
+      opacity: 0.2;
+
+      &:before,
+      &:after {
+        background: $light-grey;
+      }
+    }
+
+  }
+  &--sales {
+    .slider__arrow--next,
+    .slider__arrow--prev {
+      top: 45%;
+    }
+  }
+}
+.section-sliders {
+  margin-bottom: 40px;
+
+  @media (max-width: 1024px) {
+    padding: 0 10px;
+  }
+}

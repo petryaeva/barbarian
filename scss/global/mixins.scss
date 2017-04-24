@@ -1,0 +1,35 @@
+@mixin font-control($fontSize, $lineHeight, $fontWeight) {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-weight: $fontWeight;
+}
+
+@mixin container() {
+  width: 1170px;
+  margin: 0 auto;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+  }
+
+  @media #{$tablet-width} {
+    width: 768px;
+    padding: 0 1em;
+  }
+  @media #{$mobile-width} {
+    width: 375px;
+    padding: 0;
+  }
+}
+
+@function calc-width ($col) {
+    @return 100% / $col
+}
+
+@mixin clearfix() {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}

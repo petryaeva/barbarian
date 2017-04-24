@@ -1,0 +1,39 @@
+.btn {
+  border-radius: 2px;
+  border: none;
+
+  &--login {
+    background: #fff url(../img/login.png) no-repeat 4px 2px;
+    padding: 5px 15px 5px 35px;
+    font-size: 0.9em;
+    line-height: 15px;
+    color: $grey;
+
+    @media (max-width: 1024px) {
+      background: none;
+      color: #fff;
+      padding: 0 10px;
+    }
+    @media #{$mobile-width} {
+      display: none;
+    }
+  }
+
+  &--orange {
+    color: $orange;
+    @include font-control(0.8em, 1.4em, 400);
+    border: 1px solid $orange;
+    background: #fff;
+  }
+}
+.menu-responsive {
+  display: none;
+
+  @media #{$mobile-width} {
+    display: block;
+    background: url(../img/burger.jpg) no-repeat 0 0;
+    border: none;
+    width: 30px;
+    height: 20px;
+  }
+}
